@@ -7,9 +7,20 @@
   <body>
     
     
-      
- <a href="Barzan.html">Register </a> 
+      <form action="Barzan.html">
+ <input type="text" id="txt" />
+ <input type="submit" value="Click" onclick="passvalues()"/>
+ </form>
     
+    
+    <script type="text/javascript" charset="utf-8">
+      function passvalues() {
+        var firstname = document.getElementById("txt").value;
+        localStorage.setItem("textvalue", firstname);
+        return false;
+      }
+    </script>
+      
  
 
   </body>
